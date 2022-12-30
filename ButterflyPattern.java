@@ -1,11 +1,12 @@
 public class ButterflyPattern{
-    public static void main(String[] args){
 
-        for(int i = 1; i<=6; i++){
+
+    public static void butterFly(int n) {
+        for(int i = 1; i<=n; i++){
             for(int j=1; j<=i; j++){
                 System.out.print("* ");
             }
-            for(int k=1; k<=2*(6-i); k++){
+            for(int k=1; k<=2*(n-i); k++){
                 System.out.print("  ");
             }
             for(int j=1; j<=i; j++){
@@ -15,11 +16,11 @@ public class ButterflyPattern{
 
         }
         
-        for(int i = 6; i>=1; i--){
+        for(int i = n; i>=1; i--){
             for(int j=i; j>=1; j--){
                 System.out.print("* ");
             }
-            for(int k=2*(6-i); k>=1; k--){
+            for(int k=2*(n-i); k>=1; k--){
                 System.out.print("  ");
             }
             for(int j=i; j>=1; j--){
@@ -28,5 +29,10 @@ public class ButterflyPattern{
             System.out.println();
 
         }
+        
+    }
+    public static void main(String[] args){
+        butterFly(7);
+        
     }
 }
