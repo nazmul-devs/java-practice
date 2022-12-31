@@ -12,6 +12,8 @@ public class SolidRombosPattern {
         }
         
     }
+
+    
     public static void main(String[] args) {
         solidRombos(5);
        
